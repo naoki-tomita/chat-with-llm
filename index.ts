@@ -1,10 +1,10 @@
-import { AI } from "./OpenRouter.ts";
+import { OpenRouter } from "./OpenRouter.ts";
 export const Model = [
   "google/gemini-2.5-pro-exp-03-25:free",
   "google/gemini-2.0-flash-thinking-exp:free",
 ] as const;
 
-const response = await AI.request({
+const response = await OpenRouter.request({
   model: Model[1],
   messages: [
     {

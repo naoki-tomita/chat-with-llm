@@ -29,7 +29,7 @@ class AIResponseStream extends TransformStream<string, Response> {
   }
 }
 
-export const AI = {
+export const OpenRouter = {
   async request(message: Request): Promise<ReadableStream<Response>> {
     const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
